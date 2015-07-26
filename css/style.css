@@ -1,0 +1,38 @@
+body {
+  font-family: lucida grande, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.row ul
+{
+	list-style: none;
+	list-style-position: inside;
+}
+
+.row ul li { display: inline; }
+
+.shots,
+.attachments {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    float: left;
+    width: 25%;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  a {
+    display: block;
+  }
+}
+
+a {
+  color: #059dff;
+  text-decoration: none;
+}
