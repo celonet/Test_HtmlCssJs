@@ -1,0 +1,35 @@
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Integração API Dribbble</title>
+	<link rel="icon" href="/favicon.ico">
+	<link rel="stylesheet" href="http:\\cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/vendors.css">
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Dribble Shots</h1>
+	<main class="shots"></main>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/service-worker.js')
+				.then(function () {
+					console.log('service worker registered');
+				})
+				.catch(function () {
+					console.warn('service worker failed');
+				});
+		}
+	</script>
+	<script src="js/vendors.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		// [].forEach.call(document.querySelectorAll("*"), function (a) { a.style.outline = "1px solid #" + (~~(Math.random() * (1 << 24))).toString(16) })
+	</script>
+</body>
+
+</html>
